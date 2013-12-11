@@ -157,8 +157,15 @@
     <string name="incoming_call_style_fullscreen_photo">Fullscreen caller photo</string>
 
     <!-- dialpad t9 search -->
-    <string name="preference_category_t9_dialpad_search">Dialpad T9 search</string>
-    <string name="t9_search_input_locale">T9 search input</string>
+    <string name="preference_category_t9_dialpad_search">Dialpad T9 Search</string>
+    <string name="t9_search_input_locale">T9 Search Input</string>
     <string name="t9_search_input_locale_default">Default</string>
+
+    <!-- Empty FDN -->
+    <string name="fdn_empty_number">FDN not updated: number cannot be empty.</string>
+    <!-- Proximity sensor enable -->
+    <string name="proximity_mode_title">Enable proximity sensor</string>
+    <string name="proximity_on_summary">When in call, use proximity sensor to turn off screen.</string>
+    <string name="proximity_off_summary">When in call, the screen will remain on.</string>
 
 </resources>

@@ -117,6 +117,12 @@
         android:entryValues="@array/flip_action_setting_values"
         android:persistent="false" />
 
+    <CheckBoxPreference
+        android:key="button_proximity_key"
+        android:title="@string/proximity_mode_title"
+        android:persistent="false"
+        android:summary="@string/proximity_on_summary" />
+
     <PreferenceScreen
         android:key="button_respond_via_sms_key"
         android:title="@string/respond_via_sms_setting_title"
