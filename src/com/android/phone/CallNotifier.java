@@ -2235,6 +2235,12 @@ public class CallNotifier extends Handler
         }
     }
 
+    void onCdmaCallWaitingAnswered() {
+        // Remove Call waiting timers
+        removeMessages(CALLWAITING_CALLERINFO_DISPLAY_DONE);
+        removeMessages(CALLWAITING_ADDCALL_DISABLE_TIMEOUT);
+    }
+
     private void log(String msg) {
         Log.d(LOG_TAG, msg);
     }
