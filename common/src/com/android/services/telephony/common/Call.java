@@ -202,6 +202,9 @@ public final class Call implements Parcelable {
     // Time that this call transitioned into ACTIVE state from INCOMING, WAITING, or OUTGOING.
     private long mConnectTime = 0;
 
+    // Time at which the connection object was created
+    private long mCreateTime = 0;
+
     // List of call Ids for for this call.  (Used for managing conference calls).
     private SortedSet<Integer> mChildCallIds = Sets.newSortedSet();
 
@@ -243,6 +246,7 @@ public final class Call implements Parcelable {
         mDisconnectCause = call.mDisconnectCause;
         mCapabilities = call.mCapabilities;
         mConnectTime = call.mConnectTime;
+        mCreateTime = call.mCreateTime;
         mChildCallIds = new TreeSet<Integer>(call.mChildCallIds);
         mGatewayNumber = call.mGatewayNumber;
         mGatewayPackage = call.mGatewayPackage;
@@ -367,6 +371,14 @@ public final class Call implements Parcelable {
         return mConnectTime;
     }
 
+    public void setCreateTime(long createTime) {
+        mCreateTime = createTime;
+    }
+
+    public long getCreateTime() {
+        return mCreateTime;
+    }
+
     public boolean isForwarded() {
         return mForwarded;
     }
@@ -461,6 +473,7 @@ public final class Call implements Parcelable {
         dest.writeInt(mState);
         dest.writeString(getDisconnectCause().toString());
         dest.writeInt(getCapabilities());
+        dest.writeLong(getCreateTime());
         dest.writeLong(getConnectTime());
         dest.writeIntArray(Ints.toArray(mChildCallIds));
         dest.writeString(getGatewayNumber());
@@ -484,6 +497,7 @@ public final class Call implements Parcelable {
         mState = in.readInt();
         mDisconnectCause = DisconnectCause.valueOf(in.readString());
         mCapabilities = in.readInt();
+        mCreateTime = in.readLong();
         mConnectTime = in.readLong();
         mChildCallIds.addAll(Ints.asList(in.createIntArray()));
         mGatewayNumber = in.readString();
@@ -529,6 +543,7 @@ public final class Call implements Parcelable {
                 .add("mDisconnectCause", mDisconnectCause)
                 .add("mCapabilities", mCapabilities)
                 .add("mConnectTime", mConnectTime)
+                .add("mCreateTime", mCreateTime)
                 .add("mChildCallIds", mChildCallIds)
                 .add("mGatewayNumber", MoreStrings.toSafeString(mGatewayNumber))
                 .add("mGatewayPackage", mGatewayPackage)
