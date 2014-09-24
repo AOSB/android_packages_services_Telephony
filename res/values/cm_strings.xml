@@ -140,23 +140,18 @@
     <string name="cyngn_reverse_lookup_provider_name">Cyngn Chinese (CN)</string>
     <string name="cyngn_reverse_lookup_provider_value" translatable="false">CyngnChinese</string>
 
-    <!-- airplane mode prompt dialog -->
-    <string name="title_sim_prompt_dlg">Airplane mode</string>
-    <string name="msg_sim_prompt_dlg">Airplane mode enabled. Disable?</string>
-    <string name="msg_wait_prodlg">Disabling airplane mode\u2026</string>
-
-    <!-- Forbidden network title -->
-    <string name="network_forbidden">(Forbidden)</string>
+    <!-- dialpad t9 search -->
+    <string name="preference_category_t9_dialpad_search">Dialpad T9 search</string>
+    <string name="t9_search_input_locale">T9 search input</string>
+    <string name="t9_search_input_locale_default">Default</string>
 
     <!-- Incoming call style -->
     <string name="incoming_call_style_title">Incoming call screen style</string>
     <string name="incoming_call_style_classic">Classic</string>
     <string name="incoming_call_style_fullscreen_photo">Fullscreen caller photo</string>
 
-    <!-- dialpad t9 search -->
-    <string name="preference_category_t9_dialpad_search">Dialpad T9 Search</string>
-    <string name="t9_search_input_locale">T9 Search Input</string>
-    <string name="t9_search_input_locale_default">Default</string>
+    <!-- Forbidden network title -->
+    <string name="network_forbidden">(Forbidden)</string>
 
     <!-- Empty FDN -->
     <string name="fdn_empty_number">FDN not updated: number cannot be empty.</string>
@@ -206,11 +201,10 @@
     <!-- Emergency call number settings -->
     <string name="emergency_call_list_title">Emergency Call List</string>
     <string name="emergency_call">Call</string>
-    <string name="new_emergency_number">New Emergency Number</string>
-    <string name="delete_emergency_number">Delete Emergency Number</string>
-    <string name="emergency_call_number">Emergency Call Number</string>
-    <string name="emergency_number_exist">Emergency number already existed!</string>
-    <string name="emergency_number_save_error">Emergency number too long!</string>
+    <string name="new_emergency_number">New emergency number</string>
+    <string name="emergency_call_number">Emergency call number</string>
+    <string name="emergency_number_exist">The entered emergency number already exists.</string>
+    <string name="emergency_number_save_error">The entered emergency number is too long.</string>
 
     <!-- IP call settings -->
     <string name="ipcall">IP call settings</string>
@@ -409,36 +403,11 @@
     <!-- Mobile network settings, summary for preferred network mode TD-SCDMA/CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
     <string name="preferred_network_mode_td_scdma_cdma_evdo_gsm_wcdma_summary">Preferred network mode: TD-SCDMA/CDMA/EvDo/GSM/WCDMA</string>
 
-    <string name="mobile_network_setting">Mobile network settings</string>
     <string name="network_settings_sel_sub">Subscription settings</string>
-    <string name="network_manage_settings">Network settings</string>
-    <string name="title_data_settings">Data settings</string>
     <string name="summary_manage_subscriptions">Manage network settings of each subscription</string>
 
-    <!-- Call Independent services screen title-->
-    <string name="call_ind_services">Call independent services</string>
     <!-- button name for launching sub1, sub2 screen for Multi Sim Functionality-->
     <string name="callind_multi_sim">Subscription settings</string>
-    <!-- button name for direct launch of Call Feature screen for Single Sim Functionality -->
-    <string name="callind">Call feature settings</string>
-
-    <!-- multi sub one, setting option name -->
-    <string name="sub1">Subscription 1</string>
-    <!-- multi mode settings screen, setting summary text -->
-    <string name="sub1_summary">Manage subscription 1</string>
-    <!-- multi sub two, setting option name -->
-    <string name="sub2">Subscription 2</string>
-    <!-- multi mode settings screen, setting summary text -->
-    <string name="sub2_summary">Manage subscription 2</string>
-    <!-- multi sub three, setting option name -->
-    <string name="sub3">Subscription 3</string>
-    <!-- multi mode settings screen, setting summary text -->
-    <string name="sub3_summary">Manage subscription 3</string>
-
-    <!-- dual prompt, setting option name -->
-    <string name="prompt">Prompt</string>
-    <!-- dual mode settings screen, setting summary text -->
-    <string name="prompt_user">Prompt user</string>
 
     <!-- TTY Mode change is NOT allowed during a VT call -->
     <string name="tty_mode_not_allowed_vt_call">TTY mode change is not allowed during a video call</string>
@@ -446,10 +415,6 @@
     <string name="fdn_service_unavailable">FDN service is not available.</string>
 
     <string name="exportContacts">Exporting contacts to SIM card\u2026</string>
-
-    <!-- Text for the onscreen "Subscription" button that lets you switch
-         between the available scubscriptions [CHAR LIMIT=20] -->
-    <string name="onscreenSwitchText">Switch subscription</string>
 
     <!-- XDivert Settings -->
     <!-- Title for the XDivert Feature displayed in Call Settings -->
@@ -483,8 +448,6 @@
     <string name="ims_edit_title">IMS account details</string>
     <!-- Title displayed IMS account settings in the sip settings category. [CHAR LIMIT=NONE] -->
     <string name="ims_accounts_title">IMS account</string>
-    <!-- Text of the domain address preference. [CHAR LIMIT=NONE] -->
-    <string name="ims_domain_address_title">IMS server</string>
     <!-- Text of the transport type preference. [CHAR LIMIT=NONE] -->
     <string translatable="false" name="call_type">CallType</string>
     <string name="mo_call_type_title">MO call type</string>
@@ -495,8 +458,6 @@
     <string translatable="false" name="ims_call_type_control">ImsCallTypeCapabilityControl</string>
     <!-- Text of the use IMS default preference. [CHAR LIMIT=NONE] -->
     <string name="ims_service_capability_title">IMS service capability</string>
-    <!-- Default to IMS call summary. -->
-    <string name="use_ims_default_summary">Use IMS for all voice calls</string>
     <!-- Menu item when the menu button is pressed in the IMS account editor. [CHAR LIMIT=NONE] -->
     <string name="ims_menu_save">Save</string>
     <!-- Menu item when the menu button is pressed in the IMS account editor. [CHAR LIMIT=NONE] -->
