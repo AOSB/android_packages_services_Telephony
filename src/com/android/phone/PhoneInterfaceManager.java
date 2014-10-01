@@ -91,17 +91,17 @@ public class PhoneInterfaceManager extends ITelephony.Stub implements CallModele
     private static final int MESSAGE_SET_PREFERRED_NETWORK_TYPE = 7;
     private static final int MESSAGE_GET_PREFERRED_NETWORK_TYPE = 8;
     private static final int CMD_TOGGLE_STATE = 9;
-    private static final int CMD_EXCHANGE_APDU = 7;
-    private static final int EVENT_EXCHANGE_APDU_DONE = 8;
-    private static final int CMD_OPEN_CHANNEL = 9;
-    private static final int EVENT_OPEN_CHANNEL_DONE = 10;
-    private static final int CMD_CLOSE_CHANNEL = 11;
-    private static final int EVENT_CLOSE_CHANNEL_DONE = 12;
-    private static final int CMD_SIM_IO = 13;
-    private static final int EVENT_SIM_IO_DONE = 14;
-    private static final int CMD_SIM_GET_ATR = 15;
-    private static final int EVENT_SIM_GET_ATR_DONE = 16;
-    private static final int CMD_TOGGLE_LTE = 17; // not used yet
+    private static final int CMD_EXCHANGE_APDU = 10;
+    private static final int EVENT_EXCHANGE_APDU_DONE = 11;
+    private static final int CMD_OPEN_CHANNEL = 12;
+    private static final int EVENT_OPEN_CHANNEL_DONE = 13;
+    private static final int CMD_CLOSE_CHANNEL = 14;
+    private static final int EVENT_CLOSE_CHANNEL_DONE = 15;
+    private static final int CMD_SIM_IO = 16;
+    private static final int EVENT_SIM_IO_DONE = 17;
+    private static final int CMD_SIM_GET_ATR = 18;
+    private static final int EVENT_SIM_GET_ATR_DONE = 19;
+    private static final int CMD_TOGGLE_LTE = 20; // not used yet
 
     /** The singleton instance. */
     private static PhoneInterfaceManager sInstance;
