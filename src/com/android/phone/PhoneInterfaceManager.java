@@ -413,6 +413,7 @@ public class PhoneInterfaceManager extends ITelephony.Stub implements CallModele
                     synchronized (request) {
                         request.notifyAll();
                     }
+                    break;
 
                 default:
                     Log.w(LOG_TAG, "MainThreadHandler: unexpected message code: " + msg.what);
